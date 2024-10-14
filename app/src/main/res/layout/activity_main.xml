@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="30dp"
+    android:background="@drawable/background_image">
+
+    <TextView
+        android:id="@+id/textSize"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Choose Meal Size:"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="#000000"
+        android:paddingBottom="8dp" />
+
+    <RadioGroup
+        android:id="@+id/radioGroupSize"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/radioSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Small"
+            android:textColor="#000000" />
+
+        <RadioButton
+            android:id="@+id/radioMedium"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Medium"
+            android:textColor="#000000" />
+
+        <RadioButton
+            android:id="@+id/radioLarge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Large"
+            android:textColor="#000000" />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/textToppings"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Select Toppings:"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="#000000"
+        android:paddingTop="16dp"
+        android:paddingBottom="8dp" />
+
+    <CheckBox
+        android:id="@+id/checkCheese"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Extra Cheese"
+        android:textColor="#000000" />
+
+    <CheckBox
+        android:id="@+id/checkPepperoni"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pepperoni"
+        android:textColor="#000000" />
+    <CheckBox
+        android:id="@+id/checkMushrooms"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Mushrooms"
+        android:textColor="#000000" />
+
+    <TextView
+        android:id="@+id/textSpiceLevel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Set Spice Level:"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="#000000"
+        android:paddingTop="16dp"
+        android:paddingBottom="8dp" />
+
+    <SeekBar
+        android:id="@+id/seekBarSpice"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:max="10" />
+
+    <TextView
+        android:id="@+id/textSpiceValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Spice Level: 0"
+        android:textColor="#000000" />
+
+    <Switch
+        android:id="@+id/switchSpecialInstructions"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add Special Instructions?"
+        android:paddingTop="30dp"
+        android:textColor="#000000" />
+
+    <TextView
+        android:id="@+id/textRating"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Rate Your Meal:"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="#000000"
+        android:paddingTop="16dp"
+        android:paddingBottom="8dp" />
+
+    <RatingBar
+        android:id="@+id/ratingBarMeal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:numStars="5" />
+
+    <Button
+        android:id="@+id/btnSubmit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Submit Order"
+        android:textColor="#FFFFFF"
+        android:background="@drawable/button_background"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="16dp"
+        android:padding="10dp" />
+</LinearLayout>
